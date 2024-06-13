@@ -6,7 +6,7 @@
 /*   By: lvan-gef <lvan-gef@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/12/25 00:31:18 by lvan-gef      #+#    #+#                 */
-/*   Updated: 2023/12/27 23:02:56 by lvan-gef      ########   odam.nl         */
+/*   Updated: 2024/06/13 20:11:52 by lvan-gef      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,7 @@ bool	check_state(t_philo *philo)
 void	*run_sim(void *data)
 {
 	t_philo		*philo;
-	t_sim_state	*shared_state;
+	static t_sim_state	*shared_state;
 
 	philo = data;
 	shared_state = philo->state;
