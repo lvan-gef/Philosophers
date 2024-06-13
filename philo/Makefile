@@ -1,7 +1,7 @@
 NAME = philo
 
 CC = cc
-GFLAGS = -g3 -Wall -Werror -Wextra
+GFLAGS = -g3 -Wall -Werror -Wextra -Wshadow -Wpedantic
 
 SRCDIR = src/
 OBJDIR = obj/
@@ -27,6 +27,5 @@ clean:
 
 fclean: clean
 	rm -f $(NAME)
-	rm -f $(B_NAME)
 
 re: fclean all
